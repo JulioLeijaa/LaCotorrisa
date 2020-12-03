@@ -1,0 +1,276 @@
+:root {
+    --fuentePrincipal: 'ZING', sans-serif;
+    --aSeleccionado: #9DD962;
+    --colorNegro: #333;
+    --colorPremium: #870000;
+    --colorDios: #ffcc00;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 2;
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    display: contents;
+    text-align: justify;
+}
+
+h1 {
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+}
+
+.barra .nav img {
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.barra {
+    padding: 1rem 0;
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+}
+
+.barra .nav {
+    display: grid;
+    grid-template-columns: repeat(5, 190px);
+    justify-content: center;
+}
+
+.barra .nav a {
+    font-family: var(--fuentePrincipal);
+    font-size: 2.7rem;
+    text-align: center;
+    color: var(--colorNegro);
+    text-decoration: none;
+}
+
+.barra .nav .a-principal {
+    color: var(--aSeleccionado);
+}
+
+.barra .nav a:hover {
+    color: var(--aSeleccionado);
+    transition-property: var(--aSeleccionado) ease;
+    transition-duration: 0.3s;
+}
+
+.banner {
+    margin-top: 7rem;
+}
+
+.presentacion {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.presentacion img {
+    margin: 0 auto;
+}
+
+.presentacion p {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.presentacion a {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.boton {
+    background: #e8e8e8;
+    text-decoration: none;
+    color: var(--colorNegro);
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 0.3em;
+    padding: 0.4em .9em;
+    text-align: center;
+}
+
+.boton:hover {
+    background: #049DBF;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.boton i {
+    font-size: 2.2rem;
+    margin-right: .7rem;
+}
+
+.contenedor {
+    margin-top: 12rem;
+    background-color: var(--colorNegro);
+}
+
+.contenedor-videos {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: grid;
+}
+
+.contenedor-video {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-bottom: 3rem;
+}
+
+.col {
+    margin: auto;
+    margin-right: 2rem;
+}
+
+.contenedor-video h1 {
+    color: #ffdd00;
+    margin: 0 auto;
+}
+
+.contenedor-video p {
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    line-height: 1;
+    color: white;
+}
+
+.contenedor-video a {
+    display: block;
+}
+
+.section {
+    margin-top: 12rem;
+}
+
+.contenido-exclusivo {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1300px;
+}
+
+.contenido-exclusivo img {
+    margin: 0 auto;
+}
+
+.descripcion-exclusivo {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.cotorro h1 {
+    text-align: center;
+}
+
+.premium {
+    color: var(--colorPremium);
+}
+
+.dios {
+    color: var(--colorDios);
+}
+
+.ventajas {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.ventajas i {
+    font-size: 2.5rem;
+    margin: 3rem 1.7rem 0 auto;
+}
+
+.comentario h1 {
+    font-size: 2.7rem;
+    color: var(--colorNegro);
+    text-align: left;
+}
+
+.comentario p {
+    color: var(--colorNegro);
+    margin-top: 0;
+}
+
+.mexaman {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+
+.section a {
+    display: block;
+    grid-column: 2/3;
+}
+
+.contenedor-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 87% 13%;
+}
+
+.ricardo {
+    background: #d90000;
+    margin: 8rem 3rem 8rem 2rem;
+}
+
+.slobo {
+    background: #a9cbd4;
+    margin: 8rem 2rem 8rem 3rem;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.contenido img {
+    margin: auto;
+}
+
+.info .btn a {
+    display: block;
+    margin-top: .5rem;
+}
+
+.texto h1 {
+    margin: 2.8rem 0 0 3rem;
+}
+
+.texto p {
+    margin: 0 0 0 3rem;
+    font-family: var(--fuentePrincipal);
+}
+
+.btn {
+    background: var(--colorNegro);
+}

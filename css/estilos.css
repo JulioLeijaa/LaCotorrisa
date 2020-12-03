@@ -1,0 +1,516 @@
+:root {
+    --fuentePrincipal: 'ZING', sans-serif;
+    --aSeleccionado: #9DD962;
+    --colorNegro: #333;
+    --colorPremium: #870000;
+    --colorDios: #ffcc00;
+}
+
+html {
+    font-size: 62.5%;
+    box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+    box-sizing: inherit;
+}
+
+body {
+    line-height: 2;
+    font-size: 2rem;
+}
+
+img {
+    max-width: 100%;
+}
+
+ul {
+    list-style: none;
+}
+
+h1 {
+    font-family: var(--fuentePrincipal);
+    font-weight: 400;
+}
+
+p {
+    font-family: var(--fuentePrincipal);
+}
+
+.barra .nav img {
+    margin: 0 auto;
+    max-width: 65%;
+}
+
+.barra {
+    background-color: #fff;
+    position: fixed;
+    width: 100%;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.08);
+    z-index: 100;
+}
+
+.barra .nav a {
+    font-family: var(--fuentePrincipal);
+    font-size: 2.5rem;
+    text-align: center;
+    color: var(--colorNegro);
+    text-decoration: none;
+}
+
+.barra .nav .a-principal {
+    color: var(--aSeleccionado);
+}
+
+.barra .nav a:hover {
+    color: var(--aSeleccionado);
+    transition-property: var(--aSeleccionado) ease;
+    transition-duration: 0.3s;
+}
+
+nav {
+    position: relative;
+}
+
+nav ul {
+    display: grid;
+    grid-template-columns: 140px 140px 140px 140px 140px;
+    justify-content: center;
+    justify-items: center;
+    align-items: center;
+    margin: 0 auto;
+}
+
+nav ul::after {
+    content: '';
+    display: block;
+    clear: both;
+}
+
+.img-grid {
+    display: grid;
+}
+
+.img {
+    align-self: center;
+    justify-self: center;
+}
+
+.clearfix li:first-of-type {
+    padding-right: 4rem;
+}
+
+.clearfix li:last-of-type {
+    padding-left: 4rem;
+}
+
+nav ul ul {
+    position: absolute;
+    top: 100%;
+    background-color: #fff;
+    display: none;
+}
+
+nav ul li:hover>ul {
+    display: block;
+}
+
+@media (max-width:850px) {
+    nav ul {
+        display: flex;
+    }
+    nav ul li:hover>ul {
+        display: flex;
+    }
+}
+
+.banner {
+    margin-top: 5rem;
+}
+
+.presentacion {
+    max-width: 1050px;
+    margin: 0 auto;
+    display: grid;
+    align-items: center;
+}
+
+.presentacion img {
+    margin: 0 auto;
+}
+
+.presentacion p {
+    text-align: center;
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    line-height: 1;
+}
+
+.presentacion a {
+    max-width: 25rem;
+    margin: 0 auto;
+}
+
+.boton {
+    background: #e8e8e8;
+    text-decoration: none;
+    color: var(--colorNegro);
+    font-family: var(--fuentePrincipal);
+    font-weight: 700;
+    font-size: 16px;
+    border-radius: 0.3em;
+    padding: 0.4em .9em;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+}
+
+.boton:hover {
+    background: #049DBF;
+    color: white;
+    transition-duration: 0.3s;
+}
+
+.boton i {
+    font-size: 2.6rem;
+    margin-right: 1rem;
+    align-self: center;
+}
+
+.contenedor {
+    margin-top: 12rem;
+    background-color: var(--colorNegro);
+}
+
+.contenedor-videos {
+    margin: 0 auto;
+    max-width: 1300px;
+    display: grid;
+}
+
+.contenedor-video {
+    display: grid;
+    grid-template-columns: 45% 55%;
+    padding-bottom: 3rem;
+}
+
+.column-image {
+    margin: auto;
+    margin-right: 2rem;
+}
+
+.contenedor-video h1 {
+    color: #ffdd00;
+    margin: 0 auto;
+}
+
+.contenedor-video p {
+    font-family: var(--fuentePrincipal);
+    font-size: 3rem;
+    line-height: 1;
+    color: white;
+}
+
+.contenedor-video a {
+    display: flex;
+}
+
+@media (max-width:850px) {
+    .contenedor-video {
+        display: flex;
+        flex-direction: column;
+        padding: 1.5rem;
+        text-align: center;
+    }
+    .column-image {
+        margin: auto;
+    }
+}
+
+.section {
+    margin-top: 12rem;
+}
+
+.contenido-exclusivo {
+    display: grid;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 1300px;
+}
+
+.contenido-exclusivo img {
+    margin: 0 auto;
+}
+
+.descripcion-exclusivo {
+    max-width: 1250px;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 33.3% 33.3% 33.3%;
+}
+
+.cotorro h1 {
+    text-align: center;
+}
+
+.premium {
+    color: var(--colorPremium);
+}
+
+.dios {
+    color: var(--colorDios);
+}
+
+.ventajas {
+    display: grid;
+    grid-template-columns: 15% 85%;
+}
+
+.ventajas i {
+    font-size: 2.5rem;
+    margin: 3rem 1.7rem 0 auto;
+}
+
+.comentario h1 {
+    font-size: 2.7rem;
+    color: var(--colorNegro);
+    text-align: left;
+}
+
+.comentario p {
+    color: var(--colorNegro);
+    margin-top: 0;
+}
+
+.mexaman {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    margin: 0 auto;
+}
+
+.section a {
+    display: flex;
+    grid-column: 2/3;
+    justify-content: center;
+}
+
+@media (max-width:850px) {
+    .descripcion-exclusivo {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        align-items: center;
+    }
+    .comentario {
+        text-align: left;
+    }
+}
+
+.contenedor-info {
+    display: grid;
+    grid-template-columns: 50% 50%;
+}
+
+.info {
+    display: grid;
+    grid-template-rows: 87% 13%;
+}
+
+.ricardo {
+    background: #d90000;
+    margin: 8rem 3rem 8rem 2rem;
+}
+
+.slobo {
+    background: #a9cbd4;
+    margin: 8rem 2rem 8rem 3rem;
+}
+
+.contenido {
+    display: grid;
+    grid-template-columns: 70% 30%;
+}
+
+.contenido img {
+    margin: auto;
+}
+
+.info .btn a {
+    display: block;
+    margin-top: .5rem;
+}
+
+.texto h1 {
+    margin: 2.8rem 0 0 3rem;
+}
+
+.texto p {
+    margin: 0 0 0 3rem;
+}
+
+.btn {
+    background: var(--colorNegro);
+}
+
+@media (max-width:850px) {
+    .contenedor-info {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    .ricardo {
+        margin: 2rem 1.5rem;
+    }
+    .slobo {
+        margin: 2rem 1.5rem;
+    }
+    .contenido {
+        display: flex;
+        flex-direction: column;
+        text-align: justify;
+    }
+    .texto p {
+        margin: 0 1.5rem;
+    }
+}
+
+.footer {
+    background: var(--colorNegro);
+}
+
+.section-contacto {
+    height: 400px;
+    background-image: url(../img/fondo\ footer.jpg);
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.section-contacto::after {
+    content: '';
+    background-color: rgba(0, 0, 0, .8);
+    display: block;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    position: absolute;
+}
+
+.cont-principal {
+    display: flex;
+    flex-direction: row;
+}
+
+.col {
+    position: relative;
+    z-index: 1;
+    flex: 1;
+    padding-bottom: 2rem;
+    color: white;
+    text-align: left;
+    font-family: var(--fuentePrincipal);
+    font-size: 2rem;
+    line-height: 1;
+    padding-right: 4rem;
+}
+
+.col:first-of-type {
+    margin-left: 15rem;
+}
+
+.cont-dos h2 {
+    margin-left: 3rem;
+}
+
+.cont-dos a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont-dos a:hover {
+    color: var(--aSeleccionado);
+    transition-property: var(--aSeleccionado) ease;
+    transition-duration: 0.3s;
+}
+
+.cont-tres a {
+    text-decoration: none;
+    color: white;
+}
+
+.cont-tres a:hover {
+    color: var(--aSeleccionado);
+    transition-property: var(--aSeleccionado) ease;
+    transition-duration: 0.3s;
+}
+
+.icono {
+    font-size: 4rem;
+    line-height: 2.5em;
+    width: 2.5em;
+}
+
+@media (max-width:850px) {
+    .section-contacto {
+        height: 600px;
+    }
+    .cont-principal {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        position: absolute;
+        align-items: center;
+    }
+    .col:first-of-type {
+        margin-left: 7rem;
+        text-align: center;
+    }
+    .cont-dos {
+        text-align: center;
+    }
+    .col:last-of-type {
+        text-align: center;
+        padding-left: 3rem;
+    }
+}
+
+.section-copyright {
+    max-width: 1350px;
+    padding-bottom: .1rem;
+    color: white;
+    text-decoration: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 auto;
+}
+
+.section-copyright a {
+    text-decoration: none;
+    color: white;
+}
+
+.section-copyright a:hover {
+    color: var(--aSeleccionado);
+    transition-property: var(--aSeleccionado) ease;
+    transition-duration: 0.3s;
+}
+
+.enlaces {
+    display: inline;
+}
+
+.enlaces a {
+    display: inline;
+    margin-right: 2rem;
+}
+
+@media (max-width:850px) {
+    .copyright {
+        padding: 0 1.5rem;
+    }
+}
